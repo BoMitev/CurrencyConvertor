@@ -43,7 +43,7 @@ def validate_currency_code(code: str) -> bool:
     """
     Currencies must be in ISO 4217 three letter currency code format.
     """
-    if code.upper() in Currency:
+    if Currency.__contains__(code.upper()):
         return True
     print(f"{BOLD}Please enter a valid currency code")
     return False
