@@ -1,5 +1,5 @@
 > [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
+> Application Requirement: Python Version 3.12 or Higher. Running the application on a Python version lower than 3.12 will cause TypeError
 
 # Currency convertor
 A CLI application that integrates with Fast Forex and lets the user convert currencies with exchange rates from past dates.
