@@ -1,3 +1,4 @@
 .idea/
 .venv/
 config.json
+asi_functions/__pycache__
