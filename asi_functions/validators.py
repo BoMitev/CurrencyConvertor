@@ -17,15 +17,16 @@ def get_valid_input(validation_fn: Callable) -> str:
             return value
 
 
-def validate_date(date: str) -> str | None:
+def validate_date(args: list) -> str | None:
     """
     Date format validator
     """
     try:
+        date = args[1]
         datetime.strptime(date, "%Y-%m-%d")
         return date
-    except ValueError:
-        print(f"{BOLD}Invalid date format. Please use YYYY-MM-DD.")
+    except (ValueError, IndexError):
+        print(f"{BOLD}Invalid date format or missing argument. Please use YYYY-MM-DD.")
         exit(0)
 
 

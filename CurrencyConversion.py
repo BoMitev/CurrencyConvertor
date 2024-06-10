@@ -3,7 +3,7 @@ from asi_functions import *
 
 
 def main():
-    date_str = validate_date(sys.argv[1])       # Validate date format
+    date_str = validate_date(sys.argv)      # Validate date format
 
     while True:
         amount = float(get_valid_input(validate_amount))
